@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ This file is distributed under GPL v3 license 
+ http://www.gnu.org/licenses/gpl-3.0.html      
+
+ raven@acute-angle.net                         
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent" android:layout_height="fill_parent"
+              android:orientation="vertical" android:id="@+id/viewmain"
+              android:minWidth="240dp">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <View android:id="@+id/color_band"
+              android:layout_width="16dp"
+              android:layout_height="match_parent"
+              android:layout_weight="0"
+              android:paddingRight="4dp"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="4dp">
+            <TextView android:id="@+id/ecode"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textAppearance="@android:style/TextAppearance.Large"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:id="@+id/textName"
+                      android:textAppearance="@android:style/TextAppearance.Medium"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:id="@+id/textPurpose"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/layExtra"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:padding="4dp">
+        <ImageView android:layout_width="50dp" android:layout_height="50dp"
+                   android:src="@drawable/info" android:padding="4dp"></ImageView>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:id="@+id/textExtra"
+                  android:text="Extra" android:layout_marginTop="3dp"></TextView>
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_height="wrap_content"
+                  android:orientation="horizontal" android:layout_width="fill_parent"
+                  android:layout_gravity="center" android:id="@+id/layVegan"
+                  android:padding="4dp">
+        <LinearLayout android:id="@+id/LinearLayout02"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_v" android:layout_width="50dp"
+                       android:layout_height="50dp" android:padding="4dp"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tv_v" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:text="@string/vegan2"/>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content"
+                  android:orientation="horizontal" android:layout_width="fill_parent"
+                  android:layout_gravity="center" android:id="@+id/layChild"
+                  android:padding="4dp">
+        <LinearLayout android:id="@+id/LinearLayout02"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_ch" android:layout_width="50dp"
+                       android:layout_height="50dp" android:padding="4dp"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tv_ch" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:text="@string/child2"/>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content"
+                  android:orientation="horizontal" android:layout_width="fill_parent"
+                  android:layout_gravity="center" android:id="@+id/layAller"
+                  android:padding="4dp">
+        <LinearLayout android:id="@+id/LinearLayout02"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_al" android:layout_width="50dp"
+                       android:layout_height="50dp" android:padding="4dp"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tv_al" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:text="@string/allerg2"></TextView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/ads_layout"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:gravity="bottom"
+                  style="@style/ButtonBar">
+        <Button android:id="@+id/close_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/close"
+                style="@style/DialogButton"/>
+    </LinearLayout>
+</LinearLayout>
